@@ -49,7 +49,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.jasspj.sayhi"
+        applicationId "com.hello"
         minSdkVersion 24
         targetSdkVersion 34
         versionCode flutterVersionCode.toInteger()
