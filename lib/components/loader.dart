@@ -31,7 +31,7 @@ class Loader {
             height: Get.height,
             width: Get.width,
             child: Center(
-              child: Lottie.asset('assets/lottie/syahi.json', height: 200),
+              child: CircularProgressIndicator(),
             ),
           ),
         );

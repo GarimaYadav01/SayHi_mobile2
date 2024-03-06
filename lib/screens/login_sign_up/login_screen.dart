@@ -1,12 +1,10 @@
 import 'package:foap/helper/imports/common_import.dart';
 import 'package:foap/helper/imports/login_signup_imports.dart';
-import 'package:foap/screens/login_sign_up/set_user_name.dart';
 import 'package:lottie/lottie.dart';
-
 import '../../main.dart';
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({super.key});
 
   @override
   LoginScreenState createState() => LoginScreenState();
@@ -57,13 +55,13 @@ class LoginScreenState extends State<LoginScreen> {
                         Heading3Text(signInMessageString.tr,
                                 weight: TextWeight.bold)
                             .rp(100),
-                        Positioned(
-                            right: 0,
-                            top: 0,
-                            bottom: 0,
-                            child: Lottie.asset(
-                              'assets/lottie/syahi.json',
-                            ))
+                        // Positioned(
+                        //     right: 0,
+                        //     top: 0,
+                        //     bottom: 0,
+                        //     child: Lottie.asset(
+                        //       'assets/lottie/syahi.json',
+                        //     ))
                       ],
                     )),
                 SizedBox(
@@ -115,7 +113,7 @@ class LoginScreenState extends State<LoginScreen> {
                     ),
                   ],
                 ).ripple(() {
-                  Get.to(() => const SetUserName());
+                  Get.to(() => const SignUpScreen());
                 }),
                 divider(height: 1).vp(40),
                 BodyMediumText(continueWithAccountsString),

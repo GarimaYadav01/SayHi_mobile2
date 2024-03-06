@@ -3,9 +3,11 @@ import 'package:pin_code_text_field/pin_code_text_field.dart';
 import '../../controllers/auth/login_controller.dart';
 
 class VerifyOTP extends StatefulWidget {
+  final bool isFromForgotPassword;
   final String token;
 
-  const VerifyOTP({super.key, required this.token});
+  const VerifyOTP(
+      {super.key, required this.token, required this.isFromForgotPassword});
 
   @override
   VerifyOTPState createState() => VerifyOTPState();
@@ -84,7 +86,9 @@ class VerifyOTPState extends State<VerifyOTP> {
                   BodyLargeText(
                     didntReceivedCodeString.tr,
                   ),
-                  const SizedBox(width: 5,),
+                  const SizedBox(
+                    width: 5,
+                  ),
                   BodyLargeText(
                     resendOTPString.tr,
                     weight: TextWeight.bold,
@@ -93,8 +97,7 @@ class VerifyOTPState extends State<VerifyOTP> {
                         : AppColorConstants.themeColor,
                   ).ripple(() {
                     if (loginController.canResendOTP.value == true) {
-                      loginController.resendOTP(
-                          token: widget.token);
+                      loginController.resendOTP(token: widget.token);
                     }
                   }),
                   loginController.canResendOTP.value == false
@@ -133,10 +136,19 @@ class VerifyOTPState extends State<VerifyOTP> {
   addSubmitBtn() {
     return AppThemeButton(
       onPress: () {
-        loginController.callVerifyOTPForPhoneLogin(
-          otp: controller.text,
-          token: widget.token,
-        );
+        if (loginController.otpFilled.value == true) {
+          if (widget.isFromForgotPassword) {
+            loginController.callForgotPwdVerifyOTP(
+              otp: controller.text,
+              token: widget.token,
+            );
+          } else {
+            loginController.callVerifyOTPForPhoneLogin(
+              otp: controller.text,
+              token: widget.token,
+            );
+          }
+        }
       },
       text: verifyString.tr,
     );

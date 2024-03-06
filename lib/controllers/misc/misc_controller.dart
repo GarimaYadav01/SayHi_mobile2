@@ -33,7 +33,7 @@ class MiscController extends GetxController {
       MiscApi.searchHashtag(
           hashtag: _searchText,
           page: hashtagsPage,
-          resultCallback: (result) {
+          resultCallback: (result, metadata) {
             hashTags.addAll(result);
             hashTags.unique((e) => e.name);
 

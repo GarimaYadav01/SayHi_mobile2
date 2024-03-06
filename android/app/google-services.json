@@ -1,35 +1,50 @@
 {
   "project_info": {
-    "project_number": "787780064793",
-    "firebase_url": "https://sayhi-7baeb-default-rtdb.firebaseio.com",
-    "project_id": "sayhi-7baeb",
-    "storage_bucket": "sayhi-7baeb.appspot.com"
+    "project_number": "691821363724",
+    "firebase_url": "https://helloapp-7f23e-default-rtdb.firebaseio.com",
+    "project_id": "helloapp-7f23e",
+    "storage_bucket": "helloapp-7f23e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:787780064793:android:5a1f7eeb987f0f9ac33c88",
+        "mobilesdk_app_id": "1:691821363724:android:96e29b723e6519673c2429",
         "android_client_info": {
-          "package_name": "com.jasspj.sayhi"
+          "package_name": "com.hello"
         }
       },
       "oauth_client": [
         {
-          "client_id": "787780064793-25h8thipmiob3a0ffn0qeqk2uojbimr7.apps.googleusercontent.com",
+          "client_id": "691821363724-6f7t9vq9hdhtrnihb62pkbcvtebvv4of.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hello",
+            "certificate_hash": "3bf4bede80825049f28d5941aa7c517d7b07bd24"
+          }
+        },
+        {
+          "client_id": "691821363724-na3p0u545dpu2m89dctfps969md52c3u.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAnGHpQx6GRdiz8WjRjmsGUWsvk0gtTMPw"
+          "current_key": "AIzaSyBzMPlvTJi3kfEb1BZ7A72vKp75_EGI06I"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "787780064793-25h8thipmiob3a0ffn0qeqk2uojbimr7.apps.googleusercontent.com",
+              "client_id": "691821363724-na3p0u545dpu2m89dctfps969md52c3u.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "691821363724-o0m567o5dupln773f8k8o4ammdmdeql2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hello"
+              }
             }
           ]
         }

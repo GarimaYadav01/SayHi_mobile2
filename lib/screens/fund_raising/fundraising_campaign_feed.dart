@@ -3,17 +3,17 @@ import 'package:pull_to_refresh/pull_to_refresh.dart';
 import '../../../../components/post_card/post_card.dart';
 import '../../../../controllers/post/add_post_controller.dart';
 import '../../../../model/post_model.dart';
-import '../../controller/event/event_controller.dart';
+import '../../controllers/fund_raising/fund_raising_controller.dart';
 
-class EventFeedScreen extends StatefulWidget {
-  const EventFeedScreen({super.key});
+class FundraisingFeedScreen extends StatefulWidget {
+  const FundraisingFeedScreen({super.key});
 
   @override
-  EventFeedScreenState createState() => EventFeedScreenState();
+  FundraisingFeedScreenState createState() => FundraisingFeedScreenState();
 }
 
-class EventFeedScreenState extends State<EventFeedScreen> {
-  final EventsController _eventsController = Get.find();
+class FundraisingFeedScreenState extends State<FundraisingFeedScreen> {
+  final FundRaisingController _fundRaisingController = Get.find();
   final AddPostController _addPostController = Get.find();
   final RefreshController _refreshController =
       RefreshController(initialRefresh: false);
@@ -31,19 +31,17 @@ class EventFeedScreenState extends State<EventFeedScreen> {
   }
 
   loadData() {
-    _eventsController.loadMorePosts(
-        callback: () {
-          _refreshController.refreshCompleted();
-          _refreshController.loadComplete();
-        });
+    _fundRaisingController.loadMorePosts(callback: () {
+      _refreshController.refreshCompleted();
+      _refreshController.loadComplete();
+    });
   }
 
   refreshData() {
-    _eventsController.refreshPosts(
-        callback: () {
-          _refreshController.refreshCompleted();
-          _refreshController.loadComplete();
-        });
+    _fundRaisingController.refreshPosts(callback: () {
+      _refreshController.refreshCompleted();
+      _refreshController.loadComplete();
+    });
   }
 
   @override
@@ -58,7 +56,7 @@ class EventFeedScreenState extends State<EventFeedScreen> {
         body: Column(
           children: [
             backNavigationBar(
-              title: eventsString.tr,
+              title: postsString.tr,
             ),
             Expanded(child: postsView()),
           ],
@@ -135,16 +133,16 @@ class EventFeedScreenState extends State<EventFeedScreen> {
       return ListView.separated(
               controller: _controller,
               padding: const EdgeInsets.only(top: 20, bottom: 100),
-              itemCount: _eventsController.posts.length,
+              itemCount: _fundRaisingController.posts.length,
               itemBuilder: (context, index) {
-                PostModel model = _eventsController.posts[index];
+                PostModel model = _fundRaisingController.posts[index];
                 return PostCard(
                   model: model,
                   removePostHandler: () {
-                    _eventsController.removePostFromList(model);
+                    _fundRaisingController.removePostFromList(model);
                   },
                   blockUserHandler: () {
-                    _eventsController.removeUsersAllPostFromList(model);
+                    _fundRaisingController.removeUsersAllPostFromList(model);
                   },
                 );
               },

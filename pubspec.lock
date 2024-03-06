@@ -41,6 +41,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.2.6"
+  align_positioned:
+    dependency: transitive
+    description:
+      name: align_positioned
+      sha256: "90899a9a21259a608402d109fde83068e375042703c9c7d2c31c936a443e55f5"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.0.1"
   analyzer:
     dependency: transitive
     description:
@@ -1027,6 +1035,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.0.0+2"
+  flutter_screenutil:
+    dependency: transitive
+    description:
+      name: flutter_screenutil
+      sha256: "8cf100b8e4973dc570b6415a2090b0bfaa8756ad333db46939efc3e774ee100d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.9.0"
   flutter_spinkit:
     dependency: transitive
     description:
@@ -1181,6 +1197,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.2"
+  google_fonts:
+    dependency: transitive
+    description:
+      name: google_fonts
+      sha256: f0b8d115a13ecf827013ec9fc883390ccc0e87a96ed5347a3114cac177ef18e8
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.1.0"
   google_identity_services_web:
     dependency: transitive
     description:
@@ -1365,6 +1389,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.0.2"
+  image:
+    dependency: "direct main"
+    description:
+      name: image
+      sha256: "004a2e90ce080f8627b5a04aecb4cdfac87d2c3f3b520aa291260be5a32c033d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.1.4"
+  image_gallery_saver:
+    dependency: "direct main"
+    description:
+      name: image_gallery_saver
+      sha256: "0aba74216a4d9b0561510cb968015d56b701ba1bd94aace26aacdd8ae5761816"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.3"
   image_picker:
     dependency: "direct main"
     description:
@@ -1661,6 +1701,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.5.0"
+  matrix4_transform:
+    dependency: transitive
+    description:
+      name: matrix4_transform
+      sha256: "42c42610deecc382be2653f4a21358537401bd5b027c168a174c7c6a64959908"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.1"
   meta:
     dependency: transitive
     description:
@@ -1769,10 +1817,10 @@ packages:
     dependency: transitive
     description:
       name: path_provider
-      sha256: a1aa8aaa2542a6bc57e381f132af822420216c80d4781f7aa085ca3229208aaa
+      sha256: b27217933eeeba8ff24845c34003b003b2b22151de3c908d0e679e8fe1aa078b
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.1"
+    version: "2.1.2"
   path_provider_android:
     dependency: transitive
     description:
@@ -1821,6 +1869,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.2.3"
+  perfect_freehand:
+    dependency: transitive
+    description:
+      name: perfect_freehand
+      sha256: "2dd4a89fd1291f2a3312d2e6bbc65c4059d8f4e8086515f2311c4c1162e064d8"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.3.0"
   permission_handler:
     dependency: "direct main"
     description:
@@ -1886,13 +1942,13 @@ packages:
     source: hosted
     version: "3.0.0"
   photo_manager:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: photo_manager
-      sha256: "2d698826421ebd045ecc0df60422e9dd24bd22b178310b68444385f783735b55"
+      sha256: "8cf79918f6de9843b394a1670fe1aec54ebcac852b4b4c9ef88211894547dc61"
       url: "https://pub.dev"
     source: hosted
-    version: "2.8.1"
+    version: "3.0.0-dev.5"
   photo_view:
     dependency: "direct main"
     description:
@@ -2690,6 +2746,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.4.0+2"
+  vs_media_picker:
+    dependency: transitive
+    description:
+      name: vs_media_picker
+      sha256: "138c5708e4e8e7c31415a8d6cd232641851fec3faaec451d52d24011acc94476"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.1"
+  vs_story_designer:
+    dependency: "direct main"
+    description:
+      name: vs_story_designer
+      sha256: "4b0028c6373a6ce3f0502450ecbe3de6a7001c2aba6ee81bef8df10ade7e3c33"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.2.0"
   wakelock_plus:
     dependency: transitive
     description:

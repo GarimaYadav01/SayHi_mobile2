@@ -11,7 +11,7 @@ import '../dashboard/posts.dart';
 class HashTagsList extends StatelessWidget {
   final MiscController _miscController = Get.find();
 
-  HashTagsList({Key? key}) : super(key: key);
+  HashTagsList({super.key});
 
   @override
   Widget build(BuildContext context) {
