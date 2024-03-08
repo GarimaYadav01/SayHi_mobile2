@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:foap/helper/imports/common_import.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../api_handler/apis/auth_api.dart';
@@ -213,15 +215,31 @@ class LoginController extends GetxController {
     update();
   }
 
+  // void resendOTP({required String token}) {
+  //   Loader.show(status: loadingString.tr);
+  //   AuthApi.resendOTP(
+  //       token: token,
+  //       successCallback: () {
+  //         Loader.dismiss();
+  //         canResendOTP.value = false;
+  //         update();
+  //       });
+  // }
+
   void resendOTP({required String token}) {
     Loader.show(status: loadingString.tr);
     AuthApi.resendOTP(
-        token: token,
-        successCallback: () {
-          Loader.dismiss();
-          canResendOTP.value = false;
-          update();
-        });
+      token: token,
+      successCallback: () {
+        Loader.dismiss();
+        canResendOTP.value = false;
+        update();
+      },
+      // ErrorCallback: (error) {
+      //   Loader.dismiss();
+      //   // Handle error (e.g., show error message)
+      // },
+    );
   }
 
   void callForgotPwdVerifyOTP({

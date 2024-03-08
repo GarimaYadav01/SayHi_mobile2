@@ -33,7 +33,6 @@ import 'package:foap/util/shared_prefs.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter_callkit_incoming/flutter_callkit_incoming.dart';
 import 'package:overlay_support/overlay_support.dart';
-
 import 'components/post_card_controller.dart';
 import 'controllers/misc/gift_controller.dart';
 import 'controllers/misc/misc_controller.dart';
@@ -171,7 +170,8 @@ Future<void> main() async {
     isLaunchedFromCallNotification = true;
     getIt<SocketManager>().connect();
     performActionOnCallNotificationBanner(data, true, true);
-  } else {
+  } 
+  else {
     runApp(Phoenix(
         child: const SocialifiedApp(
       startScreen: AskToFollow(),
@@ -199,6 +199,10 @@ class _SocialifiedAppState extends State<SocialifiedApp> {
 
   @override
   Widget build(BuildContext context) {
+
+
+
+
     return OverlaySupport.global(
         child: FutureBuilder<Locale>(
             future: SharedPrefs().getLocale(),
@@ -243,3 +247,5 @@ Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
 
   NotificationManager().parseNotificationMessage(message.data);
 }
+
+

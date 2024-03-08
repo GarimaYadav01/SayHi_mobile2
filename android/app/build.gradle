@@ -99,6 +99,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging:23.1.2'
     implementation 'androidx.annotation:annotation:1.6.0'
     implementation 'com.google.android.exoplayer:exoplayer:2.17.0'
+    implementation 'com.facebook.android:facebook-android-sdk:[8,9)'
+
 }
 
 

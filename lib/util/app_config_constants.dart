@@ -7,13 +7,13 @@ final SettingsController settingsController = Get.find();
 
 class AppConfigConstants {
   // Name of app
-  static String appName = 'App name';
+  static String appName = 'Hello';
 
   static String currentVersion = '1.7';
   static const liveAppLink = 'https://www.google.com/';
 
-  static String appTagline = 'Share your day activity with friends';
-  static const googleMapApiKey = 'your_google_map_api_key';
+  static String appTagline = 'Hello Friends';
+  static const googleMapApiKey = 'AIzaSyBCrh7xEDbXWM5FGIwkHGRhoYXLza0N2P8';
 
   // static const restApiBaseUrl =
   //     'https://development.fwdtechnology.co/social_media_plus/api/web/v1/';

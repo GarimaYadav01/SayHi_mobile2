@@ -4,7 +4,8 @@ import '../../helper/imports/common_import.dart';
 import '../dashboard/loading.dart';
 
 class AskToFollow extends StatelessWidget {
-  const AskToFollow({Key? key}) : super(key: key);
+ const AskToFollow({Key? key}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {

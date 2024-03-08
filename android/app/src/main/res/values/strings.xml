@@ -3,7 +3,7 @@
     <string name="facebook_app_id">1378009362840425</string>
     <string name="facebook_client_token">99b5afa99809382cff7958f552e312db</string>
     <string name="admob_id">ca-app-pub-8591124439929503~1591633246</string>
-    <string name="google_map_id">AIzaSyBCrh7xEDbXWM5FGIwkHGRhoYXLza0N2P8</string>
+    <string name="google_map_id">4db004a007343d1e</string>
 
     <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
 </resources>
